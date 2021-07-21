@@ -4,8 +4,8 @@ class Show
               :characters
 
   def initialize(name, creator, characters)
-    @name = name
-    @creator = creator
+    @name       = name
+    @creator    = creator
     @characters = characters
   end
 

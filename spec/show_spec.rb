@@ -1,16 +1,11 @@
 require './lib/character'
-# => true
-
 require './lib/show'
-# => true
+
 RSpec.describe Show do
   before :each do
-    @kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
-    # => #<Character:0x00007f98a4ba8dc8...>
+    @kitt           = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
     @michael_knight = Character.new({name: "Michael Knight", actor: "David Hasselhoff", salary: 1_600_000})
-    # => #<Character:0x00007f8327213de0...>
-    @knight_rider = Show.new("Knight Rider", "Glen Larson", [@michael_knight, @kitt])
-    # => #<Show:0x00007f83280b3288...>
+    @knight_rider   = Show.new("Knight Rider", "Glen Larson", [@michael_knight, @kitt])
   end
 
   it 'exists & has attributes' do

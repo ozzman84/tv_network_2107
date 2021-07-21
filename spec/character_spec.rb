@@ -4,7 +4,6 @@ require './lib/character'
 RSpec.describe Character do
   before :each do
     @kitt = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
-    # => #<Character:0x00007f98a4ba8dc8...>
   end
 
   it 'exists & has attributes' do

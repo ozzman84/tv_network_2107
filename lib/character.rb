@@ -4,8 +4,8 @@ class Character
               :salary
 
   def initialize(hash)
-    @name = hash[:name]
-    @actor = hash[:actor]
+    @name   = hash[:name]
+    @actor  = hash[:actor]
     @salary = hash[:salary]
   end
 end

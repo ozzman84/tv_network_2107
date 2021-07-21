@@ -3,7 +3,7 @@ class Network
               :shows
 
   def initialize(name)
-    @name = name
+    @name  = name
     @shows = []
   end
 
